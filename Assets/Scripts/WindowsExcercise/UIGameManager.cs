@@ -36,11 +36,13 @@ public class UIGameManager : MonoBehaviour
     private void OnElementAdded(Window window)
     {
         window.window.SetActive(true);
+        window.window.transform.SetAsLastSibling();
         //->leo el contenido , lo activo y lo pongo al frente
     }
     private void OnElementRemoved(Window window)
     {
         window.window.SetActive(false);
+        window.window.transform.SetAsFirstSibling();
         //->desactivo el panel y lo mando al final
     }
 
