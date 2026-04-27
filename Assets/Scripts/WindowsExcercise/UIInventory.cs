@@ -13,7 +13,6 @@ public class UIInventory : MonoBehaviour
     {
         UpdateUI();
     }
-
     public void UpdateUI()
     {
         if (data == null) return;
@@ -22,7 +21,6 @@ public class UIInventory : MonoBehaviour
         txtStr.text = "STR: " + data.str;
         txtLife.text = "Life: " + data.life;
     }
-
     public void AddHP(int amount)
     {
         if (data == null) return;
